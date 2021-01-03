@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div className="container">
       <header className="todo-header">
-        <h1 className="title">Todo App</h1>
+        <h1 className="title">Kiut Note</h1>
         <TodoForm addTodo={addTodo} />
       </header>
       <div className="todo-items-container">
@@ -57,7 +57,7 @@ const TodoForm = ({ addTodo }) => {
       <input
         type="text"
         className="todo-input"
-        required
+        required={`Escribe tu nota para poder guardarla :)`}
         value={value}
         onChange={onChangeHandler}
       />
