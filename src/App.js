@@ -35,7 +35,7 @@ const TodoItem = ({ todo, deleteTodo }) => {
   };
   return (
     <div className="todo-item">
-      <div>{todo.task}</div>
+      <div><p>{todo.task}</p></div>
       <button onClick={handlerDelete}>X</button>
     </div>
   );

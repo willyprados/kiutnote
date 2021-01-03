@@ -8,7 +8,7 @@
 
 .container {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding-bottom: 20px;
   background: #ff009f;
   background: linear-gradient(
@@ -61,9 +61,11 @@
 
 .todo-item div {
   width: 60%;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
+  display: block;
+  margin: auto;
 }
 
 .item-decoration {
@@ -92,4 +94,16 @@ button:focus{
 }
 .todo-item button:last-of-type {
   margin-left: auto;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 600px){
+  .todo-items-container {
+    width: 90%;
+    margin: auto;
+  }
+  .todo-item button:last-of-type{
+    width: 30%;
+  }
 }
