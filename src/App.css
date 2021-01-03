@@ -61,7 +61,7 @@
 
 .todo-item div {
   width: 60%;
-  /* white-space: nowrap; */
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
